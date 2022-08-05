@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Cheatsheet</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200;300&family=JetBrains+Mono:wght@100&family=Noto+Sans+Display:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>CSS Flexbox Reference</h1>
+    </header>
+    <main>
+        <h2>Activate Flexbox</h2>
+        <table>
+            <thead>
+                <th>Property</th>
+                <th>Value</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="property">display:</td>
+                <td class="value">flex;</td>
+                <td class="description">Defines the element as a flex container</td>
+            </tr>
+            <tr>
+                <td class="property"></td>
+                <td class="value">inline-flex;</td>
+                <td class="description">Allows flex containers to become inline elements</td>
+            </tr>
+            </tbody>
+        </table>
+        <h2>justify-content</h2>
+        <table>
+            <thead>
+                <th>Property</th>
+                <th>Value</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="property">justify-content:</td>
+                <td class="value">flex-start;</td>
+                <td class="description">all items on the main axis will be positioned in order from the left of the parent container with no extra space between or before them</td>
+            </tr>
+            <tr>
+                <td class="property">justify-content:</td>
+                <td class="value">flex-end;</td>
+                <td class="description">all items on the main axis will be positioned in order from the right of the parent container with no extra space between or before them</td>
+            </tr>
+            <tr>
+                <td class="property">justify-content:</td>
+                <td class="value">center;</td>
+                <td class="description">all items on the main axis will be positioned in order in the center of the parent container with no extra space between, before, or after them</td>
+            </tr>
+            <tr>
+                <td class="property">justify-content:</td>
+                <td class="value">space-around;</td>
+                <td class="description">all items will be positioned with equal space before and after each item with 2x the space between elements</td>
+            </tr>
+            <tr>
+                <td class="property">justify-content:</td>
+                <td class="value">space-between;</td>
+                <td class="description">all items will be positioned with equal space between them without extra space before the first element or after the last element</td>
+            </tr>
+            </tbody>
+        </table>
+        <h2>align-items</h2>
+        <table>
+            <thead>
+                <th>Property</th>
+                <th>Value</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="property">align-items:</td>
+                    <td class="value">flex-start;</td>
+                    <td class="description">all elements will be positioned at the top of the cross axis</td>
+                </tr>
+                <tr>
+                    <td class="property">align-items:</td>
+                    <td class="value">flex-end;</td>
+                    <td class="description">all elements will be positioned at the bottom of the cross axis</td>
+                </tr>
+                <tr>
+                    <td class="property">align-items:</td>
+                    <td class="value">center;</td>
+                    <td class="description">all elements will be positioned halfway between the top and the bottom of the cross axis</td>
+                </tr>
+                <tr>
+                    <td class="property">align-items:</td>
+                    <td class="value">baseline;</td>
+                    <td class="description">the bottom of the elements will be aligned with each other</td>
+                </tr>
+                <tr>
+                    <td class="property">align-items:</td>
+                    <td class="value">stretch;</td>
+                    <td class="description"><span>default value.</span> elements will stretch from top to bottom if height is not specified or a min-height has been specified</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>flex</h2>
+        <table>
+            <thead>
+                <th>Property</th>
+                <th>Value</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="property">flex-grow:</td>
+                    <td class="value">#;</td>
+                    <td class="description"><span>0 is the default value.</span> specifies which elements will grow and in what proportions</td>
+                </tr>
+                <tr>
+                    <td class="property">flex-shrink:</td>
+                    <td class="value">#;</td>
+                    <td class="description"><span>1 is the default value.</span> specifies which elements will shrink and in what proportions</td>
+                </tr>
+                <tr>
+                    <td class="property">flex-basis:</td>
+                    <td class="value">#px;</td>
+                    <td class="description">specifies the element's width before it stretches or shrinks</td>
+                </tr>
+                <tr>
+                    <td class="property">flex:</td>
+                    <td class="value"># # #px;</td>
+                    <td class="description">a shorthand property for declaring flex-grow, flex-shrink, and flex-basis in that order. <span>flex can be set to 2 values for flex-grow and flex-basis, but not flex-shrink and flex-basis</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>flex-wrap</h2>
+        <table>
+            <thead>
+                <th>Property</th>
+                <th>Value</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="property">flex-wrap:</td>
+                    <td class="value">wrap;</td>
+                    <td class="description">child elements of a flex container will be moved to a new line if it goes past the set width</td>
+                </tr>
+                <tr>
+                    <td class="property">flex-wrap:</td>
+                    <td class="value">wrap-reverse;</td>
+                    <td class="description">works the same as wrap, but the order of the rows will be reversed</td>
+                </tr>
+                <tr>
+                    <td class="property">flex-wrap:</td>
+                    <td class="value">nowrap;</td>
+                    <td class="description"> <span>default value.</span> prevents the items from wrapping</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>align-content</h2>
+        <table>
+            <thead>
+                <th>Property</th>
+                <th>Value</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="property">align-content:</td>
+                    <td class="value">flex-start;</td>
+                    <td class="description">all rows will be positioned at the top of the cross axis with no extra space between</td>
+                </tr>
+                <tr>
+                    <td class="property">align-content:</td>
+                    <td class="value">flex-end;</td>
+                    <td class="description">all rows will be positioned at the bottom of the cross axis with no extra space between</td>
+                </tr>
+                <tr>
+                    <td class="property">align-content:</td>
+                    <td class="value">center;</td>
+                    <td class="description">all rows will be positioned at the center of the cross axis with no extra space between</td>
+                </tr>
+                <tr>
+                    <td class="property">align-content:</td>
+                    <td class="value">space-between;</td>
+                    <td class="description">all rows will be positioned evenly from the top to the bottom of the cross axis with no extra space before the first row and after the last row</td>
+                </tr>
+                <tr>
+                    <td class="property">align-content:</td>
+                    <td class="value">space-around;</td>
+                    <td class="description">all rows will be positioned evenly from top to the bottom of the cross axis with extra space at the top and the bottom and between each row</td>
+                </tr>
+                <tr>
+                    <td class="property">align-content:</td>
+                    <td class="value">stretch;</td>
+                    <td class="description"><span>default value.</span> if min-height or no height is specified, the rows will stretch to fill the parent container from top to bottom</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>flex-direction</h2>
+        <table>
+            <thead>
+                <th>Property</th>
+                <th>Value</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="property">flex-direction:</td>
+                    <td class="value">row;</td>
+                    <td class="description"><span>default value.</span> elements will be positioned from left to right across the container starting at the top left corner</td>
+                </tr>
+                <tr>
+                    <td class="property">flex-direction:</td>
+                    <td class="value">row-reverse;</td>
+                    <td class="description">elements will be positioned from right to left across the container starting at the top right corner</td>
+                </tr>
+                <tr>
+                    <td class="property">flex-direction:</td>
+                    <td class="value">column;</td>
+                    <td class="description">elements will be positioned from top to bottom of the container starting from the top left corner</td>
+                </tr>
+                <tr>
+                    <td class="property">flex-direction:</td>
+                    <td class="value">column-reverse;</td>
+                    <td class="description">elements will be positioned from the bottom to top of the container starting from the bottom left corner</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>flex-flow</h2>
+        <table>
+            <thead>
+                <th>Property</th>
+                <th>Value</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="property">flex-flow:</td>
+                    <td class="value">flex-wrap flex-direction;</td>
+                    <td class="description">shorthand property used to declare the flex-flow and flex-direction of an element</td>
+                </tr>
+            </tbody>
+        </table> 
+    </main>
+</body>
+</html>

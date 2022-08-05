@@ -1,0 +1,71 @@
+/* Universal Styles */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2 {
+    overflow-wrap: break-word;
+  }
+
+/* Typography */
+
+h1, h2 {
+    font-family: 'Crimson Pro', serif;
+    text-align: center;
+    margin: 24px;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+th, td {
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+th {
+    font-weight: 400;
+}
+
+td {
+    font-size: 14px;
+}
+
+.property, .value {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.description {
+    font-weight: 100;
+}
+
+.description span {
+    font-style: italic;
+}
+
+/* Box Styles */
+
+table, thead, th, tbody, tr, td  {
+    border: 2px solid #000;
+    padding: 16px;
+}
+
+table {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
